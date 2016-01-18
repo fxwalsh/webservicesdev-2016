@@ -50,11 +50,11 @@ and run it as before:
 
 It should display: **Joe Bloggs drives a Toyota**.
 
-[See [Solution 01](./lab1_files/solutions.html) for the completed code.]
+[See [Solution 01](https://moodle.wit.ie/pluginfile.php/1515450/mod_resource/content/4/solutions.html) for the completed code.]
 
 A car’s registration is also composed of three distinct elements; year, county code, and number. Use an inner object for the _registration_ property to reflect this structure and aksi add a ‘console.log’ statement that displays the following: **Reg. = 10-WD-1058**.
 
-[See [Solution 02](./lab1_files/solutions.html) for the completed code.]
+[See [Solution 02](https://moodle.wit.ie/pluginfile.php/1515450/mod_resource/content/4/solutions.html) for the completed code.]
 
 ## Dynamic properties.
 
@@ -71,7 +71,7 @@ Using this syntax, add two new properties to _aCar_:
 
 Then add a ‘console.log’ statement that displays these details, as follows : **It is a red car, 80000 mileage, and leather interior.**.
 
-[See [Solution 03](./lab1_files/solutions.html) for the completed code.]
+[See [Solution 03](https://moodle.wit.ie/pluginfile.php/1515450/mod_resource/content/4/solutions.html) for the completed code.]
 
 ## Arrays.
 
@@ -103,7 +103,7 @@ A better design for the previous owners property would be array of objects, wher
 
 You are required to change the _previous_owners_ array to reflect this redesign and rewrite the ‘console.log’ statement so that it still displays the same information.
 
-[See [Solution 04](./lab1_files/solutions.html) for the completed code.]
+[See [Solution 04](https://moodle.wit.ie/pluginfile.php/1515450/mod_resource/content/4/solutions.html) for the completed code.]
 
 For completeness, add a property to _aCar_ for the current owner’s address, as follows:
 
@@ -137,7 +137,7 @@ Run the code to prove it works:
 
 You are required to write another for-loop that displays the name (not their address as well) of each previous owner.
 
-[See [Solution 05](./lab1_files/solutions.html) for the completed code.]
+[See [Solution 05](https://moodle.wit.ie/pluginfile.php/1515450/mod_resource/content/4/solutions.html) for the completed code.]
 
 The for-loop for iterating over an object’s properties is slightly different. For example, to display the key-value pairs in the _type_ property, add the following code to the end of the file:
 
@@ -153,7 +153,7 @@ Run the code to prove it works. Note the expression `aCar.type[p]` in the above 
 
 So far we have used the **node.js** platform to execute JS code, however, the Web Browser was the original execution environment. In recent years browser vendors have been add excellent _Developer Tools_ to assist with debugging web applications. In this lab we will introduce the developer tools in the [Google Chrome](https://developer.chrome.com/devtools) browser - other browsers have similar tools. [You should install this browser to complete the lab.]
 
-To demonstrate the tools, we will paste the JS code developed so far into a blank web page. Download [this file](./lab1_files/demo.zip), unzip it and study the content. Open the `demo.html` web page in the Chrome browser. Although the page is blank, the JS code inside the ‘script’ tag has been executed. To prove this, open the Developer tools by clicking the Chrome menu icon on the top right and selecting the tools, as illustrated below:
+To demonstrate the tools, we will paste the JS code developed so far into a blank web page. Download [this file](https://moodle.wit.ie/pluginfile.php/1515450/mod_resource/content/4/demo.zip), unzip it and study the content. Open the `demo.html` web page in the Chrome browser. Although the page is blank, the JS code inside the ‘script’ tag has been executed. To prove this, open the Developer tools by clicking the Chrome menu icon on the top right and selecting the tools, as illustrated below:
 
 ![](./lab1_files/devtool.png)
 
