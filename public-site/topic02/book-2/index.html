@@ -151,7 +151,7 @@ console.log(&quot;Server running at http://127.0.0.1:8000/&quot;);
 <ul>
 <li>As in the last lab, start the service by running <code>node app.js</code> and then check if the Express app is listening on port 8000. This time, however, we will use a "Rest client" to manually test the service. If you are using the Chrome browser, you can use the 'Advanced Rest Client' which is available as a Chrome app. See <a href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo">here</a> for instructions on how to install the app. <br>
 Once installed, perform a HTTP GET request on localhost:8000 as shown below. You should get a "200 OK" result if everything is OK.
-<img alt="" src="./img/Screenshot_from_2015-03-10_12:09:27.png"></li>
+<img alt="" src="./img/01.png"></li>
 </ul>
   </div>
   <div  class="ui tab segment lab" data-tab="02">
@@ -261,7 +261,7 @@ exports.create = function(req, res) {
 </code></pre>
 
 <p>In the above code, we require the datastore script that exports the JSON array of contacts. The <code>index</code> function just returns all the contacts(i.e. the array). The <code>create</code> function creates a new new contact from the JSON contained in the HTTP body. Run the app again and, using your Rest client, test that it returns the contacts for a HTTP GET on localhost:8000/api/contact:
-<img alt="" src="./img/Screenshot" title="from 2015-03-10 16:45:27.png"></p>
+<img alt="" src="./img/02.png"></p>
 <ul>
 <li>Now test that you can add a contact to the contact list. Using your Rest client, do a HTTP POST on localhost:8000/api/contact, set the "content-type" to "application/json" and add the following into the payload:</li>
 </ul>
@@ -269,7 +269,7 @@ exports.create = function(req, res) {
 </code></pre>
 
 <p>See the screenshot below for guidance...
-<img alt="" src="./img/Screenshot" title="from 2015-03-10 16:51:01.png"></p>
+<img alt="" src="./img/03.png"></p>
   </div>
   <div  class="ui tab segment lab" data-tab="04">
     <h1>Implementing Put and Delete</h1>
