@@ -47,91 +47,69 @@ figcaption
   <body>
 
   <div class="ui container">
-  <header class="ui middle aligned center aligned stackable grid segment">
-    <div class="eight wide  column">
-      <h2> Data Stores </h2>
-      <!--<h3> () </h3>-->
-    </div>
-    <div class="one wide column sitemap">
-      <div class="popup" data-content="Top Level Topic View">
-        <a href="../index.html"> <i class="big sitemap icon"></i></a>
-        topics
-      </div>
-    </div>
-    <div class="one wide column">
-      <div class="popup" data-content="All Presentations">
-        <a href="../talkwall.html"> <i class="big film icon"></i></a>
-        slides
-      </div>
-    </div>
-    <div class="one wide column">
-      <div class="popup" data-content="All Labs">
-        <a href="../labwall.html"> <i class="big lab icon"></i></a>
-        labs
-      </div>
-    </div>
-    <div class="five wide column">
-      <img class="ui centered medium image" src="http://www.wit.ie/assets/images/wit_crest.png">
-    </div>
+<style>
+
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <a href="../index.html">
+      <i class="sitemap icon"></i>
+      Data Stores
+    </a>
   </header>
+  <div class="right tab-menu menu">
+    <a class="active item" data-tab="assigment-01">
+        assigment-01
+    </a>
+    </div>
+</div>
 
-<script>
-  $('.popup')
-  .popup()
-;
-</script>
+<br><br>
 
-
-<div class="ui four doubling stackable cards">
-      <a class="ui card" href="./talk-1/cloud-storage.pdf">
-    <div class="content">
-      <div class="right floated meta"> <i class="film large icon"></i></div>
-      <div class="header"> Cloud Storage </div>
-    </div>
-    <div class="ui bordered rounded image">
-      <img src="./talk-1/cloud-storage.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>This talk covers cloud databases and MongoDB. You will learn about characteristics of distributed cloud-based data stores and how to use MongoDB with Node.js applications.</p>
-      </div>
-    </div>
-  </a>
-
-      <a class="ui card" href="book-1/index.html">
-    <div class="content">
-      <div class="right floated meta"> <i class="lab large icon"></i></div>
-      <div class="header"> Lab-mongo-01 </div>
-    </div>
-    <div class="ui bordered rounded image">
-      <img src="./book-1/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <h1>MongoDB</h1>
-<p>MongoDB is a store for JSON documents, and allows these documents to be queried and manipulated, using JSON itself as the query language.</p>
-      </div>
-    </div>
-  </a>
-
-      <a class="ui card" href="book-2/index.html">
-    <div class="content">
-      <div class="right floated meta"> <i class="lab large icon"></i></div>
-      <div class="header"> assigment-01 </div>
-    </div>
-    <div class="ui bordered rounded image">
-      <img src="./book-2/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <h1>Assignment 1 - Web API</h1>
+  <div  class="ui tab segment lab" data-tab="assigment-01">
+    <h1>Assignment 1 - Web API</h1>
 <p>Develop a node-based API for data persistence. Continuous assessment percentage - 50% (25% of your overall mark including final exam).</p>
 <p>See full specification <a href="./files/assignment1.pdf">here</a> </p>
-      </div>
-    </div>
-  </a>
-
   </div>
+<script>
+$('.ui.menu .item')
+  .tab({
+    history: true,
+    historyType: 'hash'
+  })
+;
+</script>
    </div>
 
 
